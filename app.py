@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+
     return """
 
 <!DOCTYPE html>
@@ -185,72 +186,6 @@ a{
 </div>
 </a>
 
-<a href="#">
+<a href="/fakka">
 <div class="card">
-<div class="icon">💳</div>
-<div class="name">كروت الفكة</div>
-</div>
-</a>
-
-<a href="#">
-<div class="card">
-<div class="icon">📅</div>
-<div class="name">الباقات الشهرية</div>
-</div>
-</a>
-
-<a href="#">
-<div class="card">
-<div class="icon">🎮</div>
-<div class="name">شحن الألعاب</div>
-</div>
-</a>
-
-<a href="#">
-<div class="card">
-<div class="icon">⚙️</div>
-<div class="name">خدمات أخرى</div>
-</div>
-</a>
-
-</div>
-
-</div>
-
-<div class="banner">
-TIVA - HOT ALMGAL
-</div>
-
-<div style="height:120px"></div>
-
-<div class="bottom">
-
-<div class="active">
-🏠<br>
-الرئيسية
-</div>
-
-<div>
-📋<br>
-العمليات
-</div>
-
-<div>
-➕<br>
-إضافة رصيد
-</div>
-
-<div>
-👤<br>
-الحساب
-</div>
-
-</div>
-
-</body>
-</html>
-
-"""
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+<div class="icon">
